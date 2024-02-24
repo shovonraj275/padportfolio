@@ -10,10 +10,16 @@ a{
     text-decoration: none;
 }
 body{
+    background-color: #000;
+}  
+#main_part{
     background-image: url(../img/bg.png);
-    background-size: 1440px 1024px;
+    background-size: cover;
     background-repeat: no-repeat;
     background-color: #221A37;
+    background-position: left top;
+    height: 100vh;
+    border-radius: 60px ;
 }
 .flex{
     display: flex;
@@ -25,9 +31,76 @@ body{
 /* reusd */
 /* header */
 #header{
+    padding: 60px 72px;
+}
+#header .flex {
+    justify-content: space-between;
+}
+#header .flex .nav{
+    display: flex;
+}
+#header .nav_link{ 
+    color: #fff !important;
+    padding: 12px 20px;
+    text-transform: capitalize;
+    font-size: 12px;
+}
+#header .nav_link:hover{
+    background-color: #402166;
+    border-radius: 25px;
 
 }
-#header .flex{}
-#header{}
-#header{}
+#header .logo{
+    font-size: 27px;
+    color: #fff;
+    border-radius: 20px;
+}
+
 /* header */
+/* card_part */
+#card_part{
+    padding: 60px 72px;
+}
+#card_part .grid{
+    grid-template-columns: 50% 50%;
+}
+#card_part h1{
+    color: #fff;
+    font-size: 52px;
+    line-height: 70px;
+}
+#card_part h6{
+    color: #575757 ;
+}
+.Chief{
+    font-size: 20px;
+    color: #5D3974;
+}
+#card_part .space{
+    color: #C0C0C0 ;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+/* card_part */
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575px) {
+    .flex{
+        display: inline-block;
+    }
+    .grid{
+        display: grid;  
+    }
+}
+  
+  /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {}
+  
+  /* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {}
+  
+  /* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+  
+  /* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
+  
