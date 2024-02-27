@@ -106,6 +106,7 @@ body{
     display: grid;
     grid-template-columns: 40% 60%;
     gap: 5px;
+    padding-top: 30px;
 }
 .sub_grid img{ 
     height: 750px;
@@ -115,6 +116,10 @@ body{
     color: #5D3974;
     font-size: 30px;
 }
+.resum_sub_grid_tiems_02 h6{
+    color: #fff !important;
+    font-size: 25px;
+}
 .resum_sub_grid_tiems_01 h5{
     color: #575757;
     font-size: 25px;
@@ -123,18 +128,49 @@ body{
     margin: 0;
    padding: 0 0 0 20px  ;
 }
-.resum_sub_grid_tiems_02{
+.resum_sub_grid_tiems_02 li{
+color: #fff;
+}
+.border_before_01{
     position: relative;
 }
-.resum_sub_grid_tiems_02::before{
+
+.border_before_01::before {
     width: 3px;
-    height: 185px;
+    height: 225px;
     content: "";
-    background-color: #fff;
+    background-color: #A60AC7;
     position: absolute;
-    box-shadow: 11 17 black;
+    box-shadow: -1px 0px 2px #A60AC3;
     left: -29px;
 }
+.border_before_02{
+    position: relative;
+}
+
+.border_before_02::before {
+    width: 3px;
+    height: 225px;
+    content: "";
+    background-color: #A60AC7;
+    position: absolute;
+    box-shadow: -1px 0px 2px #A60AC3;
+    left: -29px;
+}
+.border_before_03{
+    position: relative;
+}
+
+.border_before_03::before {
+    width: 3px;
+    height: 225px;
+    content: "";
+    background-color: #A60AC7;
+    position: absolute;
+    box-shadow: -1px 0px 2px #A60AC3;
+    left: -29px;
+}
+
 /* page css  */
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575px) {
