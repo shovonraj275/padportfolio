@@ -18,7 +18,7 @@ body{
     background-repeat: no-repeat;
     background-color: #221A37;
     background-position: left top;
-    height: 100vh;
+    height: auto;
     border-radius: 60px ;
 }
 .flex{
@@ -45,6 +45,11 @@ body{
     text-transform: capitalize;
     font-size: 12px;
 }
+#header .active{
+    background-color: #402166;
+    border-radius: 25px;
+
+}
 #header .nav_link:hover{
     background-color: #402166;
     border-radius: 25px;
@@ -54,6 +59,9 @@ body{
     font-size: 27px;
     color: #fff;
     border-radius: 20px;
+}
+.mobile_nav{
+    display: none;
 }
 
 /* header */
@@ -98,13 +106,22 @@ body{
 #card_parta_gallery .grid{
     grid-template-columns: 50% 50%;
 }
+#ru_main_part{
+    background-image: url(../img/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #221A37;
+    background-position: left top;
+    height: auto;
+    border-radius: 60px ;
+}
 .sub_grid{
     display: grid;
     grid-template-columns: 50% 50%;
 }
 .resum_sub_grid{
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 45% 55%;
     gap: 5px;
     padding-top: 30px;
 }
@@ -114,15 +131,18 @@ body{
 }
 .resum_sub_grid_tiems_01 p{
     color: #5D3974;
-    font-size: 30px;
+    font-size: 25px;
+    text-transform: uppercase;
 }
 .resum_sub_grid_tiems_02 h6{
     color: #fff !important;
-    font-size: 25px;
+    font-size: 23px;
+    padding-bottom: 10px;
 }
 .resum_sub_grid_tiems_01 h5{
     color: #575757;
-    font-size: 25px;
+    font-size: 20px;
+    
 }
 .resum_sub_grid_tiems_02 .padding{
     margin: 0;
@@ -137,11 +157,11 @@ color: #fff;
 
 .border_before_01::before {
     width: 3px;
-    height: 225px;
+    height: 235px;
     content: "";
     background-color: #A60AC7;
     position: absolute;
-    box-shadow: -1px 0px 2px #A60AC3;
+    box-shadow: -1px 0px 2px 1px #A60AC3;
     left: -29px;
 }
 .border_before_02{
@@ -150,11 +170,11 @@ color: #fff;
 
 .border_before_02::before {
     width: 3px;
-    height: 225px;
+    height: 240px;
     content: "";
     background-color: #A60AC7;
     position: absolute;
-    box-shadow: -1px 0px 2px #A60AC3;
+    box-shadow: -1px 0px 2px 1px #A60AC3;
     left: -29px;
 }
 .border_before_03{
@@ -163,13 +183,14 @@ color: #fff;
 
 .border_before_03::before {
     width: 3px;
-    height: 225px;
+    height: 185px;
     content: "";
     background-color: #A60AC7;
     position: absolute;
-    box-shadow: -1px 0px 2px #A60AC3;
+    box-shadow: -1px 0px 2px 1px #A60AC3;
     left: -29px;
 }
+
 
 /* page css  */
 /* Extra small devices (portrait phones, less than 576px) */
@@ -178,7 +199,21 @@ color: #fff;
         display: inline-block;
     }
     .grid{
-        display: grid;  
+        display: grid;
+        grid-template-columns: auto;  
+    }
+    .mobile_nav{
+        display: block;
+    }
+    #main_part {
+        background-image: url(../img/bg.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #221A37;
+        background-position: left top;
+        height: 100vh;
+        border-radius: 60px;
+        background-attachment: fixed;
     }
 }
   
