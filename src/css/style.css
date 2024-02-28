@@ -21,6 +21,15 @@ body{
     height: auto;
     border-radius: 60px ;
 }
+#main_main_part{
+    background-image: url(../img/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #221A37;
+    background-position: left top;
+    height: 100vh;
+    border-radius: 60px ;
+}
 .flex{
     display: flex;
 }
@@ -196,24 +205,45 @@ color: #fff;
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575px) {
     .flex{
-        display: inline-block;
+        display: flex;
     }
     .grid{
         display: grid;
         grid-template-columns: auto;  
     }
+    .md_nav{
+        display: none;
+    }
+    #card_part .grid {
+        grid-template-columns: 100%;
+    }
     .mobile_nav{
         display: block;
     }
-    #main_part {
+    #header {
+        padding: 39px 15px;
+    }
+    #card_part{
+        padding: 39px 15px;
+
+    }
+    #main_main_part {
         background-image: url(../img/bg.png);
-        background-size: cover;
-        background-repeat: no-repeat;
+    
         background-color: #221A37;
-        background-position: left top;
-        height: 100vh;
+    /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
         border-radius: 60px;
-        background-attachment: fixed;
+       
+    }
+    #card_parta_gallery .grid {
+        grid-template-columns: 100%;
     }
 }
   
@@ -221,7 +251,14 @@ color: #fff;
 @media (min-width: 576px) and (max-width: 767.98px) {}
   
   /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991.98px) {}
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .mobile_nav{
+        display: block;
+    }
+    .md_nav{
+        display: none;
+    }
+}
   
   /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {}
