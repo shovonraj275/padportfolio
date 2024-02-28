@@ -245,6 +245,24 @@ color: #fff;
     #card_parta_gallery .grid {
         grid-template-columns: 100%;
     }
+    .border_before_02::before {
+        width: 3px;
+        height: 425px;
+        content: "";
+        background-color: #A60AC7;
+        position: absolute;
+        box-shadow: -1px 0px 2px 1px #A60AC3;
+        left: -29px;
+    }
+    .border_before_03::before {
+        width: 3px;
+        height: 430px;
+        content: "";
+        background-color: #A60AC7;
+        position: absolute;
+        box-shadow: -1px 0px 2px 1px #A60AC3;
+        left: -29px;
+    }
 }
   
   /* Small devices (landscape phones, 576px and up) */
