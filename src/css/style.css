@@ -106,11 +106,15 @@ body{
     background-repeat: no-repeat;
     background-color: #221A37;
     background-position: left top;
-    height: 150vh;
+    height: auto;
     border-radius: 60px ;
 }
+.sub_gallery img{
+    width: 94% !important;
+    height: 430px !important;
+}
 #card_parta_gallery{
-    padding: 0px 20px;
+    padding: 0px 20px 40px 20px;
 }
 #card_parta_gallery .grid{
     grid-template-columns: 50% 50%;
@@ -133,6 +137,10 @@ body{
     grid-template-columns: 45% 55%;
     gap: 5px;
     padding-top: 30px;
+}
+.card_parta_gallery img{
+    width: 300px;
+    height: 300px ;
 }
 .sub_grid img{ 
     height: 750px;
@@ -227,6 +235,24 @@ color: #fff;
         padding: 39px 15px;
 
     }
+    #header .nav_link {
+        color: #fff !important;
+        padding: 12px 0px;
+        text-transform: capitalize;
+        font-size: 12px;
+    }
+    #header .active{
+        background-color: #402166;
+        border-radius: 25px;
+        padding: 12px 20px !important;
+    
+    }
+    #header .re_active{
+        background-color: #402166;
+        border-radius: 25px;
+        padding: 12px 10px !important;
+    
+    }
     #main_main_part {
         background-image: url(../img/bg.png);
     
@@ -234,7 +260,6 @@ color: #fff;
     /* Full height */
   height: 100%; 
 
-  /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -244,6 +269,10 @@ color: #fff;
     }
     #card_parta_gallery .grid {
         grid-template-columns: 100%;
+    }
+    .sub_grid {
+        display: grid;
+        grid-template-columns:100%;
     }
     .border_before_02::before {
         width: 3px;
@@ -266,7 +295,9 @@ color: #fff;
 }
   
   /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) and (max-width: 767.98px) {}
+@media (min-width: 576px) and (max-width: 767.98px) {
+    
+}
   
   /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
